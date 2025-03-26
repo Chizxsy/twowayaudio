@@ -29,7 +29,7 @@ with wave.open("output.wav", "wb") as wf:
     wf.setnchannels(CHANNELS)
     wf.setsampwidth(p.get_sample_size(FORMAT))
     wf.setframerate(RATE)
-    wf.writeframes(audio_data_bytes)
+    wf.writeframes(audio_data)
 
 stream.stop_stream()
 stream.close()
